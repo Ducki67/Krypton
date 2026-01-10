@@ -18,11 +18,11 @@ struct FConfiguration
 
     static inline auto MaxTickRate = 30;
 
-    /*
+    
     ///  dont juse this untill its done its like s shit from reboot but in my way
     static inline auto bSeasonMapper = true; /// This ues a SPECIFIC season allower or smthing (i kinda forgot but its "FortniteSeason" in Offsets.h)
     // + this is  for webhook so shows the season / CORRECT version (not done)
-    */
+    
 
     // - late game stuff
 
@@ -61,7 +61,7 @@ struct FConfiguration
 
 
     /// DONT CHANGE THESE SHITS
-    static inline auto bUsePlaylistTab = false;
+    static inline auto bUsePlaylistTab = false; 
     static inline bool bAnim = true;  // gui stuff dont change it plz
     static inline bool bEnablePlaylistTab = true; // not added yet
 
