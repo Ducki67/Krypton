@@ -153,7 +153,7 @@ FLateGameItem LateGame::GetShotgun()
                FLateGameItem(1,FindObject<UFortWeaponRangedItemDefinition>(L"/PaprikaCoreWeapons/Items/Weapons/PaprikaShotgun_Pump/WID_Shotgun_Pump_Paprika_Athena_VR.WID_Shotgun_Pump_Paprika_Athena_VR")), // Epic
                FLateGameItem(1,FindObject<UFortWeaponRangedItemDefinition>(L"/PaprikaCoreWeapons/Items/Weapons/PaprikaShotgun_Pump/WID_Shotgun_Pump_Paprika_Athena_SR.WID_Shotgun_Pump_Paprika_Athena_SR")), // Gold
             };
-		}*/
+        }*/
 
         // CH5 S3
         else if (VersionInfo.FortniteVersion >= 30.00)
@@ -196,6 +196,12 @@ FLateGameItem LateGame::GetShotgun()
     V3 MAYBE HERE
     ============
     */
+    if (FConfiguration::bLGV3)
+    {
+        /* soon */
+    }
+
+
 
     std::cout << "LATEGAME >> (Shotguns)\n";
     return Shotguns[rand() % Shotguns.size()];
@@ -399,6 +405,10 @@ FLateGameItem LateGame::GetAssaultRifle()
     V3 MAYBE HERE
     ============
     */
+    if (FConfiguration::bLGV3)
+    {
+        /* soon */
+    }
 
     std::cout << "LATEGAME >> (AssaultRifles)\n";
     return AssaultRifles[rand() % AssaultRifles.size()];
@@ -580,13 +590,16 @@ FLateGameItem LateGame::GetSniper()
     V3 MAYBE HERE
     ============
     */
-
+    if (FConfiguration::bLGV3)
+    {
+        /* soon */
+    }
 
     std::cout << "LATEGAME >> (Snipers/Utils)\n";
     return Snipers[rand() % Snipers.size()];
 }
 
-
+/// SOON I will add the ch5 heals to ch5 versions :))
 FLateGameItem LateGame::GetHeal()
 {
     static UEAllocatedVector<FLateGameItem> Heals
@@ -645,4 +658,6 @@ const UFortItemDefinition* LateGame::GetResource(EFortResourceType ResourceType)
 
 
 }
+
+
 
