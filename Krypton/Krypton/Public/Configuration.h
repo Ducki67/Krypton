@@ -9,10 +9,10 @@ struct FConfiguration
 {
     /// Playlist selectorV1
 
-    //static inline auto Playlist = L"/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo";
+    static inline auto Playlist = L"/Game/Athena/Playlists/Playlist_DefaultSolo.Playlist_DefaultSolo";
     //static inline auto Playlist = L"/Game/Athena/Playlists/Creative/Playlist_PlaygroundV2.Playlist_PlaygroundV2";
     //static inline auto Playlist = L"/Game/Athena/Playlists/Showdown/Playlist_ShowdownAlt_Solo.Playlist_ShowdownAlt_Solo";
-    static inline auto Playlist = L"/Game/Athena/Playlists/Showdown/Playlist_Showdown_Solo.Playlist_Showdown_Solo";
+    //static inline auto Playlist = L"/Game/Athena/Playlists/Showdown/Playlist_Showdown_Solo.Playlist_Showdown_Solo";
 
 
 
@@ -40,7 +40,7 @@ struct FConfiguration
     // game rules (mainly for LG)
     static inline auto bInfiniteMats = true;
     static inline auto bInfiniteAmmo = true;
-    static inline auto bForceRespawns = false; // build your client with this too!
+    static inline auto bForceRespawns = true; // build your client with this too!
     static inline auto bJoinInProgress = false;
     static inline auto bKeepInventory = false;
 
